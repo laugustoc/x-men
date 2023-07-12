@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto X-Men</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Oxanium:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./resposive.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="logo" src="./assets/logo.svg" alt="Logo x-men">
+    </header>
+
+    <main class="selecao-de-personagens">
+        <section class="personagens">
+            <h1 class="titulo" > Selecione um personagem </h1>
+            <ul class="lista-de-personagens">
+                <li class="personagem selecionado" id="ciclope" data-name="Ciclope" data-description="Ele tem o poder de disparar rajadas ópticas por um acidente que aconeceu com ele quando criança, mas não consegue controlá-las"> <img src="./assets/card-ciclope.jpg" alt="personagem ciclope"> </li>
+                <li class="personagem" id="jean-grey" data-name="Jean Grey" data-description="Jean Grey é uma mutante nível Ômega e o principalavatar da Força Fênix, no qual manifesta poderes cósmicos, telepatia e telecinese"> <img src="./assets/card-jean-grey.jpg" alt="personagem jean grey"> </li>
+                <li class="personagem" id="lince-negra" data-name="Lince Negra" data-description="Ela tem o poder de atravessar matéria sólida, campos energia, rajadas ópticas, continuando intacta e também tem opoder de andar no ar"> <img src="./assets/card-lince-negra.jpg" alt="personagem lince negra"> </li>
+                <li class="personagem" id="magneto" data-name="Magneto" data-description="Um mutante nível ômega que tem o poder de controlar tudo aquilo que possua metal. Magento rambéem é o líder de uma revolução mutante que visa extinguir os humanos, vistos que a sua maioria odeia os mutantes"> <img src="./assets/card-magneto.jpg" alt="personagem magneto"> </li>
+                <li class="personagem" id="noturno" data-name="Noturno" data-description="Noturno é filho do demônio Azazel com a mutante Mística, o que lhe proporciona a cor azulada e aparência pouco convencional. Ele tem o poder de se teletransportar para qualquer lugar, inclusive outras dimensões"> <img src="./assets/card-noturno.jpg" alt="personagem noturno"></li>
+                <li class="personagem" id="tempestade" data-name="Tempestade" data-description="Ela tem o poder de controlar o tempo e clima a seu redor, o que a torna uma mutante muito poderosa"> <img src="./assets/card-tempestade.jpg" alt="personagem tempestade"></li>
+                <li class="personagem" id="vampira" data-name="Vampira" data-description="Vampira tem o poder de absorver as habilidades e a energia vital de qualquer um que ela toque sem o uso de suas luvas"><img src="./assets/card-vampira.jpg" alt="personagem vampira"></li>
+                <li class="personagem" id="wolverine" data-name="Wolverine" data-description="Nascido em 1880, Wolverine, ou Logan, como é conhecido, possui o poder de se regenarar de qualquer tipo de ferimento instatâneamente. Ele também possui garras em ambas as mãos, que o ajudam na luta"><img src="./assets/card-wolverine.jpg" alt="personagem wolverine"></li>
+            </ul>
+        </section>
+        <section class="personagem-selecionado">
+            <img class="personagem-grande"src="./assets/card-ciclope.png" alt="Personagem ciclope">
+
+            <div class="informacoes-personagem"> 
+                <h2 class="nome-personagem" id="nome-personagem">Ciclope</h2> 
+                <p class="descricao-personagem" id="descricao-personagem">Ele tem o poder de disparar rajadas ópticas por um acidente que aconeceu com ele quando criança, mas não consegue controlá-las</p>
+            </div>
+
+        </section>
+    </main>
+    
+    <script src="./script.js"></script>
+</body>
+</html>

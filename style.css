@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Oxanium', cursive;
+    background-color: black;
+    color: #ffffff;
+}
+
+body::before {
+    content: "";
+    background-image: url(./assets/bg-desktop.jpg);
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.2;
+}
+/*o display flex coloca os elementos em linha por padrão, para altera, alterar a propriedade flex direction. */
+/*colocar cores diferentes nos elementos para destacar no que você está mexxendo*/
+.cabecalho {
+    display: flex;
+    justify-content: center;
+}
+
+.selecao-de-personagens {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    min-height: calc(100vh - 152px); /*vh = viewportheight: 100 (100% da tela) 152px: altura do cabecalho*/
+}
+/*sempre usar o conceito de especificidade para alterar os elementos em css. O que você aplicar no pai, tabém aplicará nos filhos por padrão*/
+.selecao-de-personagens .lista-de-personagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+/*para utilizar o conceito de especificidade, colocar a classe do elemento pai, espaço, classe do elemento filho*/
+.selecao-de-personagens .personagens {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 585px;
+    gap: 25px;
+}
+
+.selecao-de-personagens .personagens .titulo {
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #47f4ff;
+    width: 100%;
+    text-align: center;
+}
+
+.lista-de-personagens .personagem img {
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #47f4ff;
+    cursor: pointer;
+}
+
+/*para estilizar um elemento que possui 2 classe htmml, colocar apenas o . sem espaço entre as classes*/
+.lista-de-personagens .personagem.selecionado {
+    box-shadow: 0px 0px 24px 0px #47f4ff;   
+}
+
+.personagem-selecionado {
+    text-align: center;
+    max-height: 530px;
+    max-width: 700px;
+    min-width: 700px;
+
+}
+
+.personagem-selecionado .personagem-grande {
+    width: 430px;
+    height: 430px;
+}
+
+.personagem-selecionado .nome-personagem {
+    font-size: 20px;
+    border-bottom: 2px solid #47f4ff;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.personagem-selecionado .descricao-personagem {
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 15px;
+    flex-wrap: wrap;    
+}
